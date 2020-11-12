@@ -5,4 +5,5 @@
     <string name="button_next">Entrar</string>
     <string name="text_menu">Olá agricultor</string>
     <string name="button_question">Perguntar</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

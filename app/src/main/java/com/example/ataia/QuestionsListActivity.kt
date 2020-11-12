@@ -1,7 +1,9 @@
 package com.example.ataia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_questions_list.*
 import org.jetbrains.anko.db.parseList
@@ -29,6 +31,12 @@ class QuestionsListActivity : AppCompatActivity() {
                 val textQuestions = questionsList.map { it.question }
                 questionsAdapter.addAll(textQuestions)
             }
+        }
+
+        list_view_questions.setOnItemClickListener { parent, view, position, id ->
+            Log.d("Debug", "${position}, ${id}")
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
         }
     }
 }
