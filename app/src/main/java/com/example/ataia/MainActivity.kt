@@ -1,5 +1,6 @@
 package com.example.ataia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,16 +12,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val input_duvida = findViewById<EditText>(R.id.input_duvida)
+        val button_next = findViewById<Button>(R.id.button_next)
 
-        val button_duvida = findViewById<Button>(R.id.button_duvida)
-
-        button_duvida.setOnClickListener {
-            Toast.makeText(
-                applicationContext,
-                "Consultando... " + input_duvida.text,
-                Toast.LENGTH_LONG
-            ).show()
+        button_next.setOnClickListener() {
+           changeActivity()
         }
+    }
+
+    private fun changeActivity() {
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
     }
 }

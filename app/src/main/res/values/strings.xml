@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Ataia</string>
     <string name="text_home">Bem vindo agricultor</string>
-    <string name="input_duvida">Qual é a sua dúvida?</string>
-    <string name="button_duvida">Perguntar</string>
+    <string name="input_question">Qual é a sua dúvida?</string>
+    <string name="button_next">Entrar</string>
+    <string name="text_menu">Olá agricultor</string>
+    <string name="button_question">Perguntar</string>
 </resources>
