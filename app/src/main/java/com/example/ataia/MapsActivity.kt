@@ -57,7 +57,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val longitude = location?.longitude as Double
 
             val current = LatLng(latitude, longitude)
-            mMap.addMarker(MarkerOptions().position(current).title("Marcador Localização"))
+            mMap.addMarker(MarkerOptions().position(current).title("Marcador Localizacao Corrente"))
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 15f))
         }
 

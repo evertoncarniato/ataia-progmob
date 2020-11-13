@@ -35,7 +35,9 @@ class QuestionsListActivity : AppCompatActivity() {
 
         list_view_questions.setOnItemClickListener { parent, view, position, id ->
             Log.d("Debug", "${position}, ${id}")
-            val intent = Intent(this, MapsActivity::class.java)
+//            val intent = Intent(this, MapsActivity::class.java)
+//            startActivity(intent)
+            val intent = Intent(this, PhotoActivity::class.java)
             startActivity(intent)
         }
     }
